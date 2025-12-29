@@ -1,4 +1,6 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL =
+    // 'http://localhost:5000/api';
+    'https://secreat-keysstorage-backend.onrender.com/api';
 
 export const apiCall = async (endpoint: string, method: string = 'GET', body?: any, token?: string) => {
     const isFormData = body instanceof FormData;
